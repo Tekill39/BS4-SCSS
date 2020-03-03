@@ -13,6 +13,42 @@ body{
     font-size: 17px;
     background-color: $divider-color;
     color: $secondary-text-color;
+    .container{
+        padding: 0;
+    }
+    //Заголовок
+    .title{
+        overflow: hidden;
+        text-align: center;
+        h4{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+            color: $secondary-text-color;
+            margin: 3rem 0;
+            padding: 2rem;
+            font-size:1.5em;
+        }
+        &:before,
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 20%;
+            height: 1rem;
+            background-color: $primary-color;
+            position: relative;
+            opacity: .5;
+        }
+        &:before{
+            margin-left: -100%;
+            left: 1.5rem;
+        }
+        &:after{
+            margin-right: -100%;
+            right:1.5rem;
+        }
+    }
     // Кнопка Отправить
     .btn{
         border: 2px solid $primary-color;
@@ -90,4 +126,42 @@ body{
             }
         }
     }
+    // Популярные категории
+    .popcat{
+        background-image: url(../img/background.jpg);
+        padding-bottom: 3rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            p{
+                padding: 0;
+                margin: 0;
+                font-weight: bold;
+                color: $primary-text-color;
+                text-shadow: 0 0 3px $primary-color-text;
+                font-size: 1.2em;
+                z-index: 100;
+                position: absolute;
+                transition: all 1s;
+            }
+            img{
+                transition: all 1s;
+            }
+            &:hover{
+                img{
+                    background-color:$primary-color-light;
+                    transform: scale(1.1);
+                    }
+                    p{
+                    transform: scale(0.9);                   
+                        }            
+            }
+        }
+    }
+
 }
