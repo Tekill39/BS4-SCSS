@@ -8,6 +8,24 @@ body {
   color: #757575;
 }
 
+body input {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid #3F51B5;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+body input::-webkit-input-placeholder {
+  color: #3F51B5;
+}
+
+body input:-moz-input-placeholder {
+  color: #3F51B5;
+}
+
 body .container {
   padding: 0;
 }
@@ -22,7 +40,7 @@ body .title h4 {
   vertical-align: middle;
   font-weight: bold;
   color: #757575;
-  margin: 3rem 0;
+  margin: 2rem 0;
   padding: 2rem;
   font-size: 1.5em;
 }
@@ -55,11 +73,29 @@ body .btn {
   color: #3F51B5;
   font-size: 1em;
   padding: 1rem 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 body .btn:hover {
   background-color: #3F51B5;
   color: #FFFFFF;
+}
+
+body .btn-inverse {
+  border: 2px solid #3F51B5;
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  border-radius: 0;
+  font-size: 1em;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .btn-inverse:hover {
+  color: #3F51B5;
+  background-color: transparent;
 }
 
 body .navbar {
@@ -84,7 +120,7 @@ body .navbar .navbar-nav li.nav-item > a.nav-link li.active > a.nav-link {
 }
 
 body header {
-  background-image: url(../img/header.png);
+  background-image: url("../img/header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,30 +156,12 @@ body header form span {
   font-weight: bold;
 }
 
-body header form input {
-  width: 100%;
-  padding: 1rem;
-  background-color: transparent;
-  border: 2px solid #3F51B5;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-body header form input::-webkit-input-placeholder {
-  color: #3F51B5;
-}
-
-body header form input:-moz-input-placeholder {
-  color: #3F51B5;
-}
-
 body .popcat {
-  background-image: url(../img/background.jpg);
-  padding-bottom: 3rem;
-  background-size: cover;
+  background-image: url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3rem;
 }
 
 body .popcat a {
@@ -186,5 +204,101 @@ body .popcat a:hover img {
 body .popcat a:hover p {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+body .adv {
+  color: #FFFFFF;
+  background: url("../img/adv.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body .adv:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#303F9F), color-stop(50%, #3F51B5), to(#C5CAE9));
+  background-image: linear-gradient(left, #303F9F 0%, #3F51B5 50%, #C5CAE9 100%);
+  opacity: .6;
+}
+
+body .adv .row {
+  padding: 3rem 0;
+}
+
+body .adv h6 {
+  font-size: 1em;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+body .adv p {
+  font-size: 0.7em;
+}
+
+body .popgoods {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .popgoods .row {
+  padding-bottom: 3rem;
+}
+
+body .popgoods .row:first-child {
+  padding: 0;
+}
+
+body .popgoods h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body .form_zamer {
+  position: relative;
+  background-image: url("../img/fiedback.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .form_zamer:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#303F9F), color-stop(50%, #3F51B5), to(#C5CAE9));
+  background-image: linear-gradient(left, #303F9F 0%, #3F51B5 50%, #C5CAE9 100%);
+  opacity: .6;
+}
+
+body .form_zamer .row {
+  padding: 3rem 0;
+}
+
+body .form_zamer h6 {
+  font-size: 1em;
+}
+
+body .form_zamer p {
+  font-size: 0.8em;
+}
+
+body .form_zamer img {
+  margin-bottom: 1.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .form_zamer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */
