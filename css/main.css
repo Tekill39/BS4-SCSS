@@ -267,18 +267,6 @@ body .form_zamer {
   background-size: cover;
 }
 
-body .form_zamer:before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#303F9F), color-stop(50%, #3F51B5), to(#C5CAE9));
-  background-image: linear-gradient(left, #303F9F 0%, #3F51B5 50%, #C5CAE9 100%);
-  opacity: .6;
-}
-
 body .form_zamer .row {
   padding: 3rem 0;
 }
@@ -300,5 +288,64 @@ body .form_zamer img {
 body .form_zamer img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+body .form_zamer input {
+  width: 100%;
+  padding: 1.5rem;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+body .form_zamer input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+body .form_zamer input:-moz-input-placeholder {
+  color: #FFFFFF;
+}
+
+body .rewiews {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3rem;
+}
+
+body .rewiews .card {
+  height: 100%;
+}
+
+body .rewiews .card h5 {
+  font-size: 1em;
+  color: #3F51B5;
+  font-weight: bold;
+}
+
+body .rewiews .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233f51b5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+body .rewiews .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233f51b5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+body footer {
+  border: 1px solid #212121;
+  color: #212121;
+}
+
+body footer .menu a.active {
+  color: #3F51B5;
+}
+
+body footer .menu a {
+  color: #212121;
+}
+
+body footer .menu a:hover {
+  color: #3F51B5;
 }
 /*# sourceMappingURL=main.css.map */

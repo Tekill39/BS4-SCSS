@@ -6,6 +6,7 @@ $accent-color:         #448AFF;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
+$pr-color: '3f51b5';  
 @mixin background-img ($src){
     background-image: url($src);
     background-position: center;
@@ -227,10 +228,10 @@ body{
 // Закажи замер
 .form_zamer{
    position: relative;
-   @include background-img('../img/fiedback.png');
-   &:before{
-     @include gradient($primary-color-dark, $primary-color ,$primary-color-light);
-}
+    @include background-img('../img/fiedback.png');
+    // &:before{
+    //   @include gradient($primary-color-dark, $primary-color ,$primary-color-light);
+    // }
   .row{
     padding: 3rem 0;
   }
@@ -247,5 +248,52 @@ body{
           transform: scale(1.2);
       }
   }
+  input{
+      width: 100%;
+      padding: 1.5rem;
+      background: transparent;
+      border: 2px solid $primary-color-text;
+      margin-bottom: 1rem;
+      &::-webkit-input-placeholder{
+        color:$primary-color-text;
+    }
+    &:-moz-input-placeholder{
+        color:$primary-color-text;
+    }
+  }
+}
+// Отзывы
+.rewiews{
+    @include background-img('../img/background.jpg');
+    padding-bottom: 3rem;
+    .card{
+        height: 100%;
+        h5{
+            font-size: 1em;
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#{$pr-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#{$pr-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+            }
+}
+footer{
+    border: 1px solid $primary-text-color;
+    color: $primary-text-color;
+    .menu{
+        a.active{
+            color: $primary-color;
+        }
+        a{
+            color: $primary-text-color;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
 }
 }
